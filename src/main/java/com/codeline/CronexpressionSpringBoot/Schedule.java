@@ -181,4 +181,10 @@ public class Schedule {
     public void scheduleTask_27() {
         System.out.println("Executed task Every 10 minutes, between 09:00 AM and 04:59 PM, Monday through Friday ");
     }
+
+    //Problem 28: Write a CRON expression that runs a job at 12:00 PM on the 3rd Wednesday of every month.
+    @Scheduled(cron = " 0 0 12 * * 3#3 ")
+    public void scheduleTask_28() {
+        System.out.println("Executed task At 12:00 PM, on the third Wednesday of the month ");
+    }
 }
