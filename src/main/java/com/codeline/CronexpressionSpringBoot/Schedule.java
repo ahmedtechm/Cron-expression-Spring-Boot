@@ -139,4 +139,10 @@ public class Schedule {
     public void scheduleTask_20() {
         System.out.println("Executed task Every 5 minutes, between 09:00 AM and 05:59 PM, only on Friday and Saturday");
     }
+
+    //Problem 21: Write a CRON expression that runs a job at 3:30 AM every day except Saturday and Sunday.
+    @Scheduled(cron = " 0 30 3 * * 1-5 ")
+    public void scheduleTask_21() {
+        System.out.println("Executed task At 03:30 AM, Monday through Friday");
+    }
 }
