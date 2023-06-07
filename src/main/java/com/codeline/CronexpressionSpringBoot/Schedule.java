@@ -41,4 +41,10 @@ public class Schedule {
     public void scheduleTask_5() {
         System.out.println("Executed task At 03:00 AM, on day 1 of the month");
     }
+
+    //Problem 6: Write a CRON expression that runs a job every Sunday at 7:30 PM and 10:30 PM.
+    @Scheduled(cron = " 0 30 19,22 * * 0 ")
+    public void scheduleTask_6() {
+        System.out.println("Executed task At 07:30 PM and 10:30 PM, only on Sunday ");
+    }
 }
