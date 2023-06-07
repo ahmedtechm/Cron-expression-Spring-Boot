@@ -265,4 +265,10 @@ public class Schedule {
     public void scheduleTask_41() {
         System.out.println("Executed task At 12:00 PM, only on Monday ");
     }
+
+    //Problem 42: Write a CRON expression that runs a job every 5 minutes on the first 10 days of January.
+    @Scheduled(cron = " 0 */5 * 1-10 1 * ")
+    public void scheduleTask_42() {
+        System.out.println("Executed task Every 5 minutes, between day 1 and 10 of the month, only in January ");
+    }
 }
