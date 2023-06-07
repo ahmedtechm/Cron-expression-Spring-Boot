@@ -127,4 +127,10 @@ public class Schedule {
     public void scheduleTask_18() {
         System.out.println("Executed task At 11:30 PM, on day 13 of the month, and on Friday");
     }
+
+    //Problem 19: Write a CRON expression that runs a job every hour but only on even-numbered days of the month.
+    @Scheduled(cron = " 0 0 * 2-30/2 * * ")
+    public void scheduleTask_19() {
+        System.out.println("Executed task Every hour, every 2 days, between day 2 and 30 of the month");
+    }
 }
