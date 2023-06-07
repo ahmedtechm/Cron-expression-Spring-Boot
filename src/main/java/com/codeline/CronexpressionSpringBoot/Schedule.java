@@ -95,6 +95,7 @@ public class Schedule {
     public void runOnWeekdays_14() {
         System.out.println("Executed task every 5 minutes on weekdays ");
     }
+
     @Scheduled(cron = "0 */15 * * * 0,6 ")
     public void runJobOnWeekends_14() {
         System.out.println("Executed task every 15 minutes on weekends ");
@@ -117,6 +118,7 @@ public class Schedule {
     public void runOnWeekdays_17() {
         System.out.println("Executed task Every 5 minutes, Sunday through Thursday ");
     }
+
     @Scheduled(cron = " 0 */15 * * * 5-6 ")
     public void runJobOnWeekends_17() {
         System.out.println("Executed task Every 15 minutes, Friday through Saturday ");
@@ -312,5 +314,11 @@ public class Schedule {
     @Scheduled(cron = " 0 0 3 * 11 1-5 ")
     public void scheduleTask_49() {
         System.out.println("Executed task At 03:00 AM, Monday through Friday, only in November ");
+    }
+
+    //Problem 50: Write a CRON expression that runs a job every 10 minutes between 9:00 AM and 5:00 PM on weekdays.
+    @Scheduled(cron = " 0 */10 9-16 * * 1-5 ")
+    public void scheduleTask_50() {
+        System.out.println("Executed task Every 10 minutes, between 09:00 AM and 04:59 PM, Monday through Friday ");
     }
 }
