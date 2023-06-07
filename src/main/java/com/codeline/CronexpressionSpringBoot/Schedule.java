@@ -205,4 +205,10 @@ public class Schedule {
     public void scheduleTask_31() {
         System.out.println("Executed task At 11:30 PM, only on Friday ");
     }
+
+    //Problem 32: Write a CRON expression that runs a job at 3:15 AM every day.
+    @Scheduled(cron = " 0 15 3 * * * ")
+    public void scheduleTask_32() {
+        System.out.println("Executed task At 03:15 AM ");
+    }
 }
