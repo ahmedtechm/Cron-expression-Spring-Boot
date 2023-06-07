@@ -241,4 +241,10 @@ public class Schedule {
     public void scheduleTask_37() {
         System.out.println("Executed task Every 15 minutes, between 02:00 PM and 10:59 PM, only on Saturday and Sunday ");
     }
+
+    //Problem 38: Write a CRON expression that runs a job every 10 minutes on weekdays between 8:00 AM and 3:00 PM.
+    @Scheduled(cron = " 0 */10 8-14 * * 1-5 ")
+    public void scheduleTask_38() {
+        System.out.println("Executed task Every 10 minutes, between 08:00 AM and 02:59 PM, Monday through Friday ");
+    }
 }
