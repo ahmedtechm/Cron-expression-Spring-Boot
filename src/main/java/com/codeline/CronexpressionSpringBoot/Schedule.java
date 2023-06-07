@@ -277,4 +277,10 @@ public class Schedule {
     public void scheduleTask_43() {
         System.out.println("Executed task At 04:30 PM, Monday through Friday, only in July and August ");
     }
+
+    //Problem 44: Write a CRON expression that runs a job at 12:00 AM on the first day of every quarter (January, April, July, and October).
+    @Scheduled(cron = " 0 0 1 1 1,4,7,10 * ")
+    public void scheduleTask_44() {
+        System.out.println("Executed task At 01:00 AM, on day 1 of the month, only in January, April, July, and October ");
+    }
 }
