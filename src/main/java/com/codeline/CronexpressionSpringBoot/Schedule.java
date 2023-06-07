@@ -301,4 +301,10 @@ public class Schedule {
     public void scheduleTask_47() {
         System.out.println("Executed task Every second, at 30 minutes past the hour, between 01:00 PM and 01:59 PM,between day 2 and 30 of the month, and on Friday ");
     }
+
+    //Problem 48: Write a CRON expression that runs a job at 5:30 PM on the first day of every month.
+    @Scheduled(cron = " 0 30 17 1 * * ")
+    public void scheduleTask_48() {
+        System.out.println("Executed task At 05:30 PM, on day 1 of the month ");
+    }
 }
