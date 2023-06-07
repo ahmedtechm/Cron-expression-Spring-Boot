@@ -295,4 +295,10 @@ public class Schedule {
     public void scheduleTask_46() {
         System.out.println("Executed task At 0 minutes past the hour, every 2 hours, between 10:00 PM and 11:59 PM and every 2 hours, between 12:00 AM and 05:59 AM");
     }
+
+    //Problem 47: Write a CRON expression that runs a job at 1:30 PM on the second to last Friday of every month.
+    @Scheduled(cron = " * 30 13 2-30 * 5 ")
+    public void scheduleTask_47() {
+        System.out.println("Executed task Every second, at 30 minutes past the hour, between 01:00 PM and 01:59 PM,between day 2 and 30 of the month, and on Friday ");
+    }
 }
