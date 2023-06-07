@@ -211,4 +211,10 @@ public class Schedule {
     public void scheduleTask_32() {
         System.out.println("Executed task At 03:15 AM ");
     }
+
+    //Problem 33: Write a CRON expression that runs a job every hour from 6:00 AM to 8:00 PM on weekdays.
+    @Scheduled(cron = " 0 0 6-20 * * 1-5 ")
+    public void scheduleTask_33() {
+        System.out.println("Executed task Every hour, between 06:00 AM and 08:59 PM, Monday through Friday ");
+    }
 }
