@@ -223,4 +223,10 @@ public class Schedule {
     public void scheduleTask_34() {
         System.out.println("Executed task Every 30 minutes, on day 15 and 30 of the month ");
     }
+
+    //Problem 35: Write a CRON expression that runs a job every 5 minutes on the 1st day of every month.
+    @Scheduled(cron = " 0 */5 * 1 * * ")
+    public void scheduleTask_35() {
+        System.out.println("Executed task Every 5 minutes, on day 1 of the month ");
+    }
 }
