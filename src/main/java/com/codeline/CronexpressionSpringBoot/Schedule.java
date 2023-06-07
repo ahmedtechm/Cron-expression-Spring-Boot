@@ -283,4 +283,10 @@ public class Schedule {
     public void scheduleTask_44() {
         System.out.println("Executed task At 01:00 AM, on day 1 of the month, only in January, April, July, and October ");
     }
+
+    //Problem 45: Write a CRON expression that runs a job at 8:00 AM every day, except for the last day of the month.
+    @Scheduled(cron = " 0 0 8 1-30 * * ")
+    public void scheduleTask_45() {
+        System.out.println("Executed task At 08:00 AM, between day 1 and 30 of the month ");
+    }
 }
