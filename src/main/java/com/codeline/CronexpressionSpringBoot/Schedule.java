@@ -169,4 +169,10 @@ public class Schedule {
     public void scheduleTask_25() {
         System.out.println("Executed task At 0 and 30 minutes past the hour, between 06:00 PM and 11:59 PM, Monday through Friday ");
     }
+
+    //Problem 26: Write a CRON expression that runs a job at 4:30 PM on the 1st and 15th days of every month.
+    @Scheduled(cron = " 0 30 16 1,15 * * ")
+    public void scheduleTask_26() {
+        System.out.println("Executed task At 04:30 PM, on day 1 and 15 of the month ");
+    }
 }
