@@ -151,4 +151,10 @@ public class Schedule {
     public void scheduleTask_22() {
         System.out.println("Executed task Every hour, between 09:00 AM and 04:59 PM, on day 15 of the month");
     }
+
+    //Problem 23: Write a CRON expression that runs a job at 8:15 AM every weekday except Friday.
+    @Scheduled(cron = " 0 15 8 * * 1-4,6 ")
+    public void scheduleTask_23() {
+        System.out.println("Executed task At 08:15 AM, only on Monday through Thursday and Saturday");
+    }
 }
