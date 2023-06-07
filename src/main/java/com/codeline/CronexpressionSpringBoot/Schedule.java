@@ -253,4 +253,10 @@ public class Schedule {
     public void scheduleTask_39() {
         System.out.println("Executed task At 11:00 PM ");
     }
+
+    //Problem 40: Write a CRON expression that runs a job every 30 minutes on the 15th and last day of every month.
+    @Scheduled(cron = " 0 0,30 * 15,L * * ")
+    public void scheduleTask_40() {
+        System.out.println("Executed task At 0 and 30 minutes past the hour, on day 15 and the last day of the month ");
+    }
 }
