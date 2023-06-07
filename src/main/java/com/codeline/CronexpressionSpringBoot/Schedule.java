@@ -229,4 +229,10 @@ public class Schedule {
     public void scheduleTask_35() {
         System.out.println("Executed task Every 5 minutes, on day 1 of the month ");
     }
+
+    //Problem 36: Write a CRON expression that runs a job every hour on the hour from 9:00 AM to 5:00 PM on weekdays.
+    @Scheduled(cron = " 0 0 9-17 * * 1-5 ")
+    public void scheduleTask_36() {
+        System.out.println("Executed task Every hour, between 09:00 AM and 05:59 PM, Monday through Friday ");
+    }
 }
