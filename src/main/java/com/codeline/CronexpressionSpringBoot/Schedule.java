@@ -95,4 +95,8 @@ public class Schedule {
     public void runOnWeekdays_14() {
         System.out.println("Executed task every 5 minutes on weekdays ");
     }
+    @Scheduled(cron = "0 */15 * * * 0,6 ")
+    public void runJobOnWeekends_14() {
+        System.out.println("Executed task every 15 minutes on weekends ");
+    }
 }
