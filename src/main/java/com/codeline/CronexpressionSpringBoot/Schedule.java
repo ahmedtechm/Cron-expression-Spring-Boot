@@ -157,4 +157,10 @@ public class Schedule {
     public void scheduleTask_23() {
         System.out.println("Executed task At 08:15 AM, only on Monday through Thursday and Saturday");
     }
+
+    //Problem 24: Write a CRON expression that runs a job at 10:00 PM every day in the month of December.
+    @Scheduled(cron = " 0 0 22 * 12 * ")
+    public void scheduleTask_24() {
+        System.out.println("Executed task At 10:00 PM, only in December ");
+    }
 }
