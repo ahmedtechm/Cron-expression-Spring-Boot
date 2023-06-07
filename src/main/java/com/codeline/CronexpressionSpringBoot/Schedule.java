@@ -105,4 +105,10 @@ public class Schedule {
     public void scheduleTask_15() {
         System.out.println("Executed task Every 10 minutes, between 09:00 AM and 05:59 PM, Sunday through Thursday");
     }
+
+    //Problem 16: Write a CRON expression that runs a job every hour during the first half of the month.
+    @Scheduled(cron = " 0 0 * 1-15 * * ")
+    public void scheduleTask_16() {
+        System.out.println("Executed task Every hour, between day 1 and 15 of the month");
+    }
 }
