@@ -83,4 +83,10 @@ public class Schedule {
     public void scheduleTask_12() {
         System.out.println("Executed task Every hour, on day 15 of the month ");
     }
+
+    //Problem 13: Write a CRON expression that runs a job every day at 6:00 PM during daylight saving time(DST) in the United States.
+    @Scheduled(cron = "0 0 18 ? 3-10 *")
+    public void scheduleTask_13() {
+        System.out.println("Executed task At 06:00 PM, March through October ");
+    }
 }
