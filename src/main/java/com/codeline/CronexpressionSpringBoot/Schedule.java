@@ -307,4 +307,10 @@ public class Schedule {
     public void scheduleTask_48() {
         System.out.println("Executed task At 05:30 PM, on day 1 of the month ");
     }
+
+    //Problem 49: Write a CRON expression that runs a job at 3:00 AM on weekdays in the month of November.
+    @Scheduled(cron = " 0 0 3 * 11 1-5 ")
+    public void scheduleTask_49() {
+        System.out.println("Executed task At 03:00 AM, Monday through Friday, only in November ");
+    }
 }
