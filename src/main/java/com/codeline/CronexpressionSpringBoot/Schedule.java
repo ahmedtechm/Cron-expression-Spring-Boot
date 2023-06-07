@@ -17,4 +17,10 @@ public class Schedule {
     public void scheduleTask_1() {
         System.out.println("Executed task Every 5 minutes");
     }
+
+    //Problem 2: Write a CRON expression that runs a job every hour.
+    @Scheduled(cron = "0 0 * * * *")
+    public void scheduleTask_2() {
+        System.out.println("Executed task Every hour");
+    }
 }
