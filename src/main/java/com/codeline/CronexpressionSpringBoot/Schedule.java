@@ -71,4 +71,10 @@ public class Schedule {
     public void scheduleTask_10() {
         System.out.println("Executed task Every hour, only in January ");
     }
+
+    //Problem 11: Write a CRON expression that runs a job every 30 minutes during business hours (8:00 AMto 5:00 PM) on weekdays.
+    @Scheduled(cron = " 0 */30 8-16 * * 0-4 ")
+    public void scheduleTask_11() {
+        System.out.println("Executed task Every 30 minutes, between 08:00 AM and 04:59 PM, Sunday through Thursday ");
+    }
 }
