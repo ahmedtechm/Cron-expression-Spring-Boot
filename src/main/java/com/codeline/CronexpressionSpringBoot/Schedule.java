@@ -163,4 +163,10 @@ public class Schedule {
     public void scheduleTask_24() {
         System.out.println("Executed task At 10:00 PM, only in December ");
     }
+
+    //Problem 25: Write a CRON expression that runs a job at the bottom of every hour (i.e., at :00 and :30 minutes past the hour) between 6:00 PM and midnight on weekdays.
+    @Scheduled(cron = " 0 0,30 18-23 * * 1-5 ")
+    public void scheduleTask_25() {
+        System.out.println("Executed task At 0 and 30 minutes past the hour, between 06:00 PM and 11:59 PM, Monday through Friday ");
+    }
 }
