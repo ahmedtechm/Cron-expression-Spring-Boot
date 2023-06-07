@@ -133,4 +133,10 @@ public class Schedule {
     public void scheduleTask_19() {
         System.out.println("Executed task Every hour, every 2 days, between day 2 and 30 of the month");
     }
+
+    //Problem 20: Write a CRON expression that runs a job every 5 minutes but only between 9:00 AM and 6:00 PM on weekends.
+    @Scheduled(cron = " 0 */5 9-17 * * 5,6 ")
+    public void scheduleTask_20() {
+        System.out.println("Executed task Every 5 minutes, between 09:00 AM and 05:59 PM, only on Friday and Saturday");
+    }
 }
